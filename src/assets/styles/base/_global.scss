@@ -1,0 +1,17 @@
+.sectionTitle {
+    > h1 {
+        font-family: $font-bold;
+
+        > span {
+            color: $blue;
+        }
+    }
+
+    > p {
+        color: #333;
+        font-size: 1.1rem;
+        font-weight: bold;
+        letter-spacing: 2.8px;
+        font-family: 'Acme', sans-serif;
+    }
+}

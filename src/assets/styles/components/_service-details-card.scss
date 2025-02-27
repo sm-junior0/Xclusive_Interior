@@ -1,0 +1,178 @@
+.serviceDetailsCard {
+    &.interior {
+        flex-direction: row-reverse;
+    }
+
+    .serviceDetailsCardImg {
+        height: 600px;
+        width: 660px;
+        box-shadow: 4px 4px 15px gray;
+
+        > img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .serviceDetailsCardDesc {
+        height: 420px;
+        width: 680px;
+        top: 50%;
+        background: #eee;
+        border-radius: 0.2rem;
+        box-shadow: 4px 4px 15px silver;
+
+        &.constructionDesc {
+            left: 90%;
+            transform: translate(-90%, -50%);
+        }
+
+        &.interiorDesc {
+            left: 10%;
+            transform: translate(-10%, -50%);
+        }
+
+        > h2 {
+            color: #444;
+            font-size: 2.7rem;
+            letter-spacing: 3px;
+            font-family: $font-bold;
+            text-transform: uppercase;
+            padding: 2rem 0 0 2rem;
+
+            &::first-letter {
+                color: $blue;
+                font-size: 3.2rem;
+            }
+        }
+
+        > p {
+            color: #444;
+            font-size: 1.1rem;
+            padding: 2rem 2rem 0 2rem;
+        }
+
+        .buttonBox {
+            padding: 2.8rem 0 0 2rem;
+
+            .learnMoreBtn {
+                padding: 0.6rem 1rem;
+                border: 2px solid $blue;
+                text-decoration: none;
+                font-family: $font-bold;
+            
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .serviceDetailsCard {
+        .serviceDetailsCardImg {
+            height: 460px;
+            width: 520px;
+        }
+    
+        .serviceDetailsCardDesc {
+            width: 480px;
+            height: 330px;  
+
+            > h2 {
+                font-size: 2.2rem;
+                padding: 1rem 0 0 1.6rem;
+    
+                &::first-letter {
+                    font-size: 2.8rem;
+                }
+            }
+    
+            > p {
+                font-size: 1rem;
+                padding: 0.6rem 1.6rem 0 1.6rem;
+            }
+    
+            .buttonBox {
+                padding: 1.6rem 0 0 1.6rem;
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .serviceDetailsCard {
+        .serviceDetailsCardImg {
+            height: 380px;
+            width: 420px;
+        }
+    
+        .serviceDetailsCardDesc {
+            width: 440px;
+            height: 300px;  
+
+            > h2 {
+                font-size: 2rem;
+                padding: 1rem 0 0 1.2rem;
+    
+                &::first-letter {
+                    font-size: 2.4rem;
+                }
+            }
+    
+            > p {
+                font-size: 1rem;
+                padding: 0.2rem 1.2rem 0 1.2rem;
+            }
+    
+            .buttonBox {
+                padding: 0.6rem 0 0 1.2rem;
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .serviceDetailsCard {
+        .serviceDetailsCardImg {
+            width: 100%;
+        }
+    
+        .serviceDetailsCardDesc {
+            top: 3rem;
+            width: 90%;
+            height: auto;
+            min-height: 380px;
+
+            > h2 {
+                letter-spacing: 1px;
+            }
+
+            &.constructionDesc {
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+    
+            &.interiorDesc {
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .serviceDetailsCard {
+        .serviceDetailsCardDesc {
+            > h2 {
+                font-size: 1.6rem;
+    
+                &::first-letter {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

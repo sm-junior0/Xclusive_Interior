@@ -1,0 +1,187 @@
+.about {
+    .aboutWrap {
+        box-sizing: border-box;
+
+        .aboutImage {
+            height: 450px;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.1);
+                border-radius: 0.2rem;
+            }
+
+            > img {
+                object-fit: cover;
+                border-radius: 0.2rem;
+            }
+        }
+
+        .aboutDesc {
+            color: #333;
+
+            > h1 {
+                color: $primary;
+                margin-top: 1.2rem;
+                font-size: 2.6rem;
+            }
+
+            > h3 {
+                font-size: 1.4rem;
+            }
+
+            > p {
+                margin-top: 1rem;
+                font-size: 1.2rem;
+            }
+
+            button {
+                margin-top: 0.6rem;
+                color: $white;
+                font-size: 1.2rem;
+                height: 2.6rem;
+                width: 8rem;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background: $primary;
+                border-radius: 0.1rem;
+            }            
+        }
+    }
+}
+
+.customerReview {
+    min-height: 520px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../../images/exclusive/04.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .reviewTitle {
+        > h1 {
+            text-shadow: 1px 1px 6px #333;
+
+            > span {
+                color: skyblue;
+            }
+        }
+    }
+
+    .reviewCards {
+        width: 82%;
+        min-height: 420px;
+
+        .card {
+            margin: 0 1.4rem;
+            padding: 2rem;
+            height: auto;
+            width: 100%;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.7);
+            box-sizing: border-box;
+
+            .reviewIcon {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .customerReview {
+        .reviewCards {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about {
+        .aboutWrap {
+            .aboutImage {
+                height: 380px;
+            }
+    
+            .aboutDesc {
+                > h1 {
+                    font-size: 2.2rem;
+                }
+    
+                > h3 {
+                    font-size: 1.4rem;
+                }
+    
+                > p {
+                    font-size: 1.2rem;
+                }
+    
+                button {
+                    font-size: 1.2rem;
+                    height: 2.8rem;
+                    width: 7.8rem;
+                }            
+            }
+        }
+    }
+
+    .customerReview {
+        .reviewCards {
+            .card {
+                margin-bottom: 2.4rem;
+    
+                .reviewIcon {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        .aboutWrap {
+            .aboutImage {
+                height: 320px;
+            }
+    
+            .aboutDesc {
+                > h1 {
+                    font-size: 2rem;
+                }
+    
+                > h3 {
+                    font-size: 1.3rem;
+                }
+    
+                > p {
+                    font-size: 1.1rem;
+                }
+    
+                button {
+                    font-size: 1.1rem;
+                    height: 2.4rem;
+                    width: 6.8rem;
+                }            
+            }
+        }
+    }
+
+    .customerReview {
+        .reviewCards {
+            .card {
+                padding: 1rem;
+                margin-bottom: 2rem;
+    
+                .reviewIcon {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

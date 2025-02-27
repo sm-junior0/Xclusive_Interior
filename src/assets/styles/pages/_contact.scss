@@ -1,0 +1,86 @@
+.contact {
+    .contactBox {
+        color: #444;
+        max-width: 1080px;
+
+        .contactAddress {
+
+            .contactTitle {
+                h1 {
+                    color: $primary;
+                }
+
+                p {
+                    width: 90%;
+                }
+            }
+
+            .contactInfo {
+                div {
+                    margin-top: 2rem;
+
+                    h3 {
+                        font-size: 1.4rem;
+
+                        strong {
+                            margin-left: 1rem;
+                        }                        
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        .contactForm {
+            form {
+                .inputField {
+                    height: 48px;
+                    margin-bottom: 2rem;
+
+                    input,
+                    select {
+                        padding: 0 1rem;
+                        color: #444;
+                        font-size: 1.2rem;
+                        outline: none;
+                        box-sizing: border-box;
+                        box-shadow: 0.1rem 0.1rem 0.6rem #ddd;
+                        border-radius: 0.1rem;
+                    }
+                }
+
+                .textareaField {
+                    margin-top: 0.8rem;
+                    height: 220px;
+
+                    textarea {
+                        padding: 1rem;
+                        font-size: 1.2rem;
+                        height: 200px;
+                        outline: none;
+                        box-sizing: border-box;
+                        box-shadow: 0.1rem 0.1rem 0.6rem #ddd;
+                        border-radius: 0.1rem;
+                    }                        
+                }
+
+                .buttonField {
+                    margin-top: 0.8rem;
+
+                    button {
+                        font-size: 1.3rem;
+                        letter-spacing: 1px;
+                        height: 52px;
+                        outline: none;
+                        background: $primary;
+                        border-radius: 0.1rem;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,418 @@
+.gallary {
+    display: grid;
+    place-items: center;
+    padding-bottom: 2rem;
+    font-family: $font-family-base;
+
+    .gallaryContents {
+        margin: 1.4rem 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .filterMenu {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+
+            > li {
+                margin: 0.2rem 0.4rem;
+                padding: 0.4rem 1rem;
+                color: $blue;
+                cursor: pointer;
+                font-size: 1.4rem;
+                border: 3px solid $blue;
+                transition: all 0.4s ease;
+
+                &:hover,
+                &.activeMenu {
+                    color: $white;
+                    background: $blue;
+                }
+            }
+        }
+
+        .filterItems {
+            margin-top: 1.6rem;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .card {
+                position: relative;
+                margin: 0.3rem;
+                flex-basis: calc(90% / 3);
+                flex-grow: 1;
+                min-width: 320px;
+                height: 300px;
+                cursor: pointer;
+                border-radius: 0.4rem;
+                box-shadow: 4px 4px 20px gray;
+                overflow: hidden;
+
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 0.4rem;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0.9) 100%);
+                    transform: scale(1);
+                    transition: all 0.4s ease;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.6);
+                    border-radius: 0.2rem;
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                    transform: scale(1);
+                    transition: all 0.4s ease;
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                    transform: scale(0.9);
+                }
+                
+                .hoverText {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) scale(0.8);
+                    color: $white;
+                    width: 80%;
+                    font-size: 1.1rem;
+                    text-align: center;
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                    transition: all 0.4s ease;
+                    z-index: 1;
+                }
+
+                &:hover .hoverText {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                    transform: translate(-50%, -50%) scale(1);
+                }
+
+                .cardText {
+                    padding: 0 2rem 0 2rem;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    > p {
+                        color: $white;
+                        font-size: 1.4rem;
+                    }
+                }
+                
+                &.deleteCard {
+                    display: none;
+                }
+
+                &.activeCard {
+                    animation: anim 0.3s ease-out forwards;
+                }
+                
+                @keyframes anim {
+                    from {
+                        transform: scale(0.2);
+                    }
+                
+                    to {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+
+        .projectItems {
+            .card {
+                &::before {
+                    background: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+                }
+
+                .hoverText {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .lightbox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0.9);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: scale(1.4);
+        transition: all 0.4s ease;
+        z-index: 99999;
+
+        &.showLightbox {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: scale(1);
+        }
+
+        .wrapper {
+            height: 100%;
+            width: 100%;
+
+            .lightboxContent {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 0 0.4rem;
+                width: 100%;
+                height: 500px;
+                max-width: 700px;
+                box-sizing: border-box;
+                z-index: 999;
+
+                .header {
+                    padding: 0.4rem 0;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border: none;
+
+                    p {
+                        color: #4ab11b;
+                        font-size: 1.2rem;
+                        font-family: $font-family-base;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+
+                    .closeBtn {
+                        height: 2.4rem;
+                        width: 2.4rem;
+                        display: grid;
+                        cursor: pointer;
+                        place-items: center;
+
+                        #closeLightbox {
+                            position: relative;
+                            height: 2rem;
+                            width: 2rem;
+
+                            &::before {
+                                position: absolute;
+                                content: '';
+                                top: 0.8rem;
+                                right: 0;
+                                height: 3px;
+                                width: 20px;
+                                background: $white;
+                                border-radius: 0.1rem;
+                                transform: rotate(-45deg);
+                                transition: all 0.4s ease;
+                            }
+
+                            &::after {
+                                position: absolute;
+                                content: '';
+                                top: 0.8rem;
+                                right: 0;
+                                height: 3px;
+                                width: 20px;
+                                background: $white;
+                                border-radius: 0.1rem;
+                                transform: rotate(45deg);
+                                transition: all 0.4s ease;
+                            }
+
+                            &:hover::before,
+                            &:hover::after {
+                                background: orangered;
+                            }
+                        }
+                    }
+                }
+
+                .imageBox {
+                    height: 90%;
+                    width: 100%;
+
+                    img {
+                        height: calc(100% - 0.8rem);
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .arrowBtns {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                pointer-events: none;
+                z-index: 9999;
+
+                #leftArrow,
+                #rightArrow {
+                    padding: 2% 4%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    pointer-events: auto;
+                    cursor: pointer;
+
+                    .arrowIcon {
+                        color: $white;
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .gallary {
+        .lightbox {
+            .wrapper {
+                .lightboxContent {
+                    height: 460px;
+                }
+
+                .arrowBtns {
+                    padding: 7% 2% 0 2%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .gallary {
+        .gallaryContents {
+            .filterMenu {
+                > li {
+                    margin: 0.2rem 0.3rem;
+                    padding: 0.3rem 0.8rem;
+                }
+            }
+    
+            .filterItems {
+                .card {
+                    min-width: 100%;
+                }
+            }
+        }
+    
+        .lightbox {
+            .wrapper {
+                .lightboxContent {
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .gallary {
+        .gallaryContents {
+            margin: 1rem 0;
+
+            .filterMenu {
+                > li {
+                    padding: 0.3rem 0.7rem;
+                    font-size: 1.2rem;
+                }
+            }
+    
+            .filterItems {
+                margin-top: 1rem;
+    
+                .card {
+                    .cardText {
+                        padding: 0 1.2rem 0 1.2rem;
+    
+                        > p {
+                            font-size: 1.2rem;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .lightbox {
+            .wrapper {
+                .lightboxContent {
+                    height: 360px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .gallary {
+        .lightbox {
+            .wrapper {
+                .lightboxContent {
+                    .header {
+                        padding: 0.2rem 0;
+                        p {
+                            font-size: 1.1rem;
+                        }  
+                    }
+                }
+    
+                .arrowBtns {
+                    #leftArrow,
+                    #rightArrow {
+                        padding: 1%;
+                    }
+                }
+            }
+        }
+    }
+}

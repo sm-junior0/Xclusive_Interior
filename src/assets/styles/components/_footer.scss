@@ -1,0 +1,116 @@
+.footer {
+    background: #0f0d17;
+
+    .footer-col {
+        width: 30%;
+
+        &:first-child {
+            width: 33%;
+
+            .logo {
+                letter-spacing: 2px;
+    
+                span {
+                    color: orange;
+                }
+            }
+
+            .socialLink {
+                border: 2px solid $white;
+                text-decoration: none;
+                margin-right: 0.6rem;
+                height: 2.4rem;
+                width: 2.4rem;
+
+                .icon {
+                    color: $white;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .title {
+            letter-spacing: 2px;
+        }
+
+        .redirects {
+            > p {
+                padding-bottom: 0.1rem;
+                border-bottom: 1px solid #222;
+
+                a:hover {
+                    color: $blue;
+                }
+            }
+        }
+
+        .address {
+            > p {
+                padding-bottom: 0.1rem;
+                border-bottom: 1px solid #222;
+
+                strong {
+                    color: orange;
+                    letter-spacing: 2px;
+                    width: 4rem;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        border-top: 1px solid #222;
+
+        > p {
+            font-size: 1.1rem;
+
+            a:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .footer {
+        .footer-col {
+            width: 50%;
+    
+            &:first-child {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        .footer-col {
+            width: 100%;
+    
+            &:first-child {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .footer {
+        .copyright {
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        .copyright {
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

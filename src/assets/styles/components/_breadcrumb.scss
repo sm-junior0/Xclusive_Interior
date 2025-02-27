@@ -1,0 +1,63 @@
+.breadcrumb {
+    height: 11rem;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../../images/utilities/breadcumb.jpg');
+    background-size: cover;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            .link {
+                color: #777;
+                font-size: 1.1rem;
+                text-decoration: none;
+                font-family: 'Lato', sans-serif;
+
+                span {
+                    padding: 0 0.5rem;
+                }
+
+                &.active {
+                    color: #eee;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .breadcrumb {
+        h2 {
+            font-size: 1.6rem;
+        }
+    
+        ul {    
+            li {
+                .link {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .breadcrumb {
+        .container {
+            flex-direction: column;
+            justify-content: center!important;
+
+            ul {
+                padding-left: 0;
+                margin-top: 1.2rem!important;
+            }
+        }
+    }
+}

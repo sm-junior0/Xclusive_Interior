@@ -1,0 +1,271 @@
+.serviceCards {
+    .card {
+        position: relative;
+        height: 24rem;
+        width: calc(90% / 3);
+        min-width: 22rem;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 4px 4px 15px gray;
+        border: none !important;
+    
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(35, 35, 35, 0.4);
+            pointer-events: none;
+            z-index: 99;
+        }
+    
+        > img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 0.8s ease;
+        }
+    
+        &:hover > img {
+            transform: scale(1.2);
+        }
+    
+        .cardTextContent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            z-index: 999;
+        }
+    
+        .cardTextContent > p {
+            padding: 0 0.6rem;
+            color: $white;
+            font-size: 2.6rem;
+            letter-spacing: 1px;
+            font-family: $font-bold;
+            text-align: center;
+            text-transform: capitalize;
+            text-shadow: 2px 2px 4px #444;
+        }
+    }
+}
+
+.serviceGallary {
+    max-width: 1540px;
+
+    .gallaryWrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        .gallaryCard {
+            position: relative;
+            height: 400px;
+            flex-basis: 400px;
+            flex-grow: 1;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.4s ease;
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 34%, rgba(0, 0, 0, 0.7) 100%);
+                z-index: 999;
+            }
+            
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0);
+                transition: all 0.4s ease;
+                z-index: 999;
+            }
+
+            &:hover::after {
+                background: rgba(0, 0, 0, 0.7);
+            }
+
+            > img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: all 0.8s ease;
+            }
+
+            &:hover > img {
+                transform: scale(1.2);
+            }
+
+            .hoverText {
+                position: absolute;
+                top: 15%;
+                left: 0;
+                width: 100%;
+                transform: translate(0, -20%);
+                transition: all 0.3s ease-in-out;
+                z-index: 9999;
+
+                p {
+                    color: $white;
+                    font-size: 2rem;
+                    position: absolute;
+                    margin-right: 5rem;
+                    padding-left: 3rem;
+                    padding-bottom: 0.4rem;
+                    transform: translate(-5%, -20%);
+                    transition: all 0.3s ease-in-out;
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        bottom: 0;
+                        left: -20%;
+                        height: 0.2rem;
+                        width: 120%;
+                        background: $blue;
+                        transform: scaleX(0);
+                        transform-origin: left;
+                        transition: all 0.2s ease;
+                        transition-delay: 0.3s;
+                    }
+                }
+                
+            }
+
+            &:hover .hoverText {
+                p {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                    transform: translate(5%, -20%);
+
+                    &::before {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+
+            .cardText {
+                padding: 0 3rem 0 3rem;
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                width: 100%;
+                height: 6rem;
+                align-items: center;
+                justify-content: space-between;
+                z-index: 9999;
+
+                > p {
+                    margin-bottom: 0 !important;
+                    color: $white;
+                    font-size: 1.5rem;
+                }
+            }            
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .serviceCards {
+        .card {
+            height: 20rem;
+            min-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .serviceCards {
+        .card {
+            height: 18rem;
+
+            .cardTextContent > p {
+                padding: 0 0.6rem;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .serviceGallary {    
+        .gallaryWrapper {
+            margin-top: 0!important;
+
+            .gallaryCard {
+                height: 360px;
+    
+                .hoverText {
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+    
+                .cardText {
+                    padding: 0 2rem 0 2rem;
+                    height: 5rem;
+    
+                    > p {
+                        font-size: 1.4rem;
+                    }
+                }            
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .serviceGallary {    
+        .gallaryWrapper {
+            .gallaryCard {
+                height: 300px;
+    
+                .hoverText {
+                    p {
+                        font-size: 1.4rem;
+                        padding-left: 1.6rem;
+                    }
+                }
+    
+                .cardText {
+                    padding: 0 1.6rem 0 1.6rem;
+                    height: 4rem;
+    
+                    > p {
+                        font-size: 1.4rem;
+                    }
+                }            
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .serviceGallary {    
+        .gallaryWrapper {
+            .gallaryCard {
+                height: 280px;
+    
+                .cardText {
+                    > p {
+                        font-size: 1.3rem;
+                    }
+                }            
+            }
+        }
+    }
+}

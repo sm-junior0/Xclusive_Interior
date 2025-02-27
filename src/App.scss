@@ -1,0 +1,22 @@
+@import './assets/styles/base/variables';
+
+// bootstrap scss
+@import '~bootstrap/scss/bootstrap';
+
+// base
+@import './assets/styles/base/fonts';
+@import './assets/styles/base/reset';
+@import './assets/styles/base/global';
+
+// components
+@import './assets/styles/components/header';
+@import './assets/styles/components/footer';
+@import './assets/styles/components/hero-slider';
+@import './assets/styles/components/service-details-card';
+@import './assets/styles/components/breadcrumb';
+
+// pages
+@import './assets/styles/pages/about';
+@import './assets/styles/pages/contact';
+@import './assets/styles/pages/services';
+@import './assets/styles/pages/gallary';
