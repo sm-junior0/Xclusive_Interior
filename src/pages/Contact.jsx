@@ -43,23 +43,22 @@ const Contact = () => {
                     <div className="contactAddress w-100 w-lg-50 me-4">
                         <div className="contactTitle">
                             <h1>Let's Connect!</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit dolor nihil iste porro distinctio. In
-                                harum quidem mollitia quas natus aliquam dolore dolores.</p>
+                            <p>We're here to help you with your design and build needs. Reach out to us!</p>
                         </div>
                         <div className="contactInfo">
                             <div className="officeAddress">
                                 <h3 className="d-flex align-items-center"><FaMapMarkedAlt/><strong>Address:</strong></h3>
-                                <p>North Tower(3rd floor), Dhaka, Bangladesh</p>
+                                <p>Kigali, Rwanda</p>
                             </div>
 
                             <div className="contactMail">
                                 <h3><IoMdMail/><strong>Mail:</strong></h3>
-                                <p>interiorx@example.com</p>
+                                <p>info@xqdc.com</p>
                             </div>
 
                             <div className="contactPhone">
                                 <h3><FaPhone/><strong>Phone:</strong></h3>
-                                <p>+88 01234-567899, +88 01298-765431</p>
+                                <p>+250 781 005 276</p>
                             </div>
                         </div>
                     </div>
@@ -93,7 +92,7 @@ const Contact = () => {
                                 <button className="text-white w-100 border-0" type="submit">Send</button>
                             </div>
                         </form>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </AppLayout>

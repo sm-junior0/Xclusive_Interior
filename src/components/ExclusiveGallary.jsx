@@ -7,7 +7,7 @@ import ExclusiveImg02 from '../assets/images/exclusive/02.jpg';
 import ExclusiveImg03 from '../assets/images/exclusive/03.jpg';
 import ExclusiveImg04 from '../assets/images/exclusive/04.jpg';
 import ExclusiveImg05 from '../assets/images/exclusive/05.jpg';
-import ExclusiveImg06 from '../assets/images/exclusive/06.jpg';
+import ExclusiveImg06 from '../assets/images/exclusive/06.jpeg';
 import ExclusiveImg07 from '../assets/images/exclusive/07.jpg';
 import ExclusiveImg08 from '../assets/images/exclusive/08.jpg';
 import ExclusiveImg09 from '../assets/images/exclusive/09.jpg';
@@ -44,122 +44,108 @@ const ExclusiveGallary = () => {
                 <div className="filterItems" data-aos="fade-up" data-aos-duration="700">
                     <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg01} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Interior Design</p>
                             <p>Stauts</p>
                         </div>
                     </Link>
 
                     <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg02} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Interior Design</p>
                             <p>Stauts</p>
                         </div>
                     </Link>
 
                     <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg03} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Interior Design</p>
                             <p>Stauts</p>
                         </div>
                     </Link>
 
                     <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg04} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Interior Design</p>
                             <p>Stauts</p>
                         </div>
                     </Link>
 
                     <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg05} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Interior Design</p>
                             <p>Stauts</p>
                         </div>
                     </Link>
 
                     <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg06} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Interior Design</p>
                             <p>Stauts</p>
                         </div>
                     </Link>
 
                     <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg07} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Single family residential house</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Single Family House</p>
                             <p>Stauts</p>
                         </div>
                     </Link>
 
                     <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg08} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Single family aesthetic villa</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Family villa</p>
                             <p>Stauts</p>
                         </div>
                     </Link>
 
                     <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg09} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Residential villa</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Residential villa</p>
                             <p>Stauts</p>
                         </div>
                     </Link>
 
                     <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg10} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Well built Aesthetic house</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Family House</p>
                             <p>Stauts</p>
                         </div>
                     </Link>
 
                     <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg11} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Well built Aesthetic house</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Family House</p>
                             <p>Stauts</p>
                         </div>
                     </Link>
 
                     <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
                         <img src={ExclusiveImg12} alt="exclusiveImg"/>
-                        <p className="hoverText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus
-                            exercitationem dolorum sit ipsum saepe provident vel repellat reprehenderit.</p>
+                        <p className="hoverText">Well built Aesthetic Villa</p>
                         <div className="cardText">
-                            <p>Project Title Here</p>
+                            <p>Family Villa</p>
                             <p>Stauts</p>
                         </div>
                     </Link>

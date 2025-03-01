@@ -111,7 +111,7 @@ const Construction = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallary" state="construction" className="gallaryCard">
+                  <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={ExclusiveImg09} alt="exclusiveImg"/>
 
                         <div className="hoverText">
@@ -148,9 +148,9 @@ const Construction = () => {
                             <p className="title">Construction Project Title</p>
                             <p className="status">Status</p>
                         </div>
-                    </Link>
+                    </Link> 
 
-                    <Link to="/project-gallary" state="construction" className="gallaryCard">
+                    {/* <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={ExclusiveImg12} alt="exclusiveImg"/>
 
                         <div className="hoverText">
@@ -161,7 +161,7 @@ const Construction = () => {
                             <p className="title">Construction Project Title</p>
                             <p className="status">Status</p>
                         </div>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </AppLayout>

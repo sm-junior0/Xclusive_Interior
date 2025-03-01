@@ -17,7 +17,7 @@ import ExclusiveImg02 from '../assets/images/exclusive/02.jpg';
 import ExclusiveImg03 from '../assets/images/exclusive/03.jpg';
 import ExclusiveImg04 from '../assets/images/exclusive/04.jpg';
 import ExclusiveImg05 from '../assets/images/exclusive/05.jpg';
-import ExclusiveImg06 from '../assets/images/exclusive/06.jpg';
+import ExclusiveImg06 from '../assets/images/exclusive/06.jpeg';
 
 const Interior = () => {
     return (
