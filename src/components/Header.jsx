@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
 // images
-import Logo from '../assets/images/utilities/logo1.jpg';
+import Logo from '../assets/images/utilities/logo1.png';
 
 // bootstrap components
 import Container from 'react-bootstrap/Container';
