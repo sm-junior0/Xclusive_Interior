@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <AppLayout>
             <HeroSlider/>
-            <ServiceCards/>
+            {/* <ServiceCards/> */}
             <ServiceDetailsCard type="construction"/>
             <ServiceDetailsCard type="interior"/>
             <ExclusiveGallary/>

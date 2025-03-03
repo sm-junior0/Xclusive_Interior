@@ -8,7 +8,7 @@ const ServiceCards = () => {
     return (
         <div className="serviceCards">
             <div className="sectionTitle pt-5">
-                <h1 className="text-center text-uppercase"><span>Our</span> Services</h1>
+                <h1 className="text-center text-uppercase">Some <span>of Our</span> Services</h1>
                 <p className="text-center text-uppercase">What we do</p>
             </div>
 

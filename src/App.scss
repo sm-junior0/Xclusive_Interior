@@ -20,3 +20,82 @@
 @import './assets/styles/pages/contact';
 @import './assets/styles/pages/services';
 @import './assets/styles/pages/gallary';
+
+// Add this to your SCSS file
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px; // Raise it above a little
+    right: 30px; // Adjust as needed
+    z-index: 1000; // Ensure it stays on top
+    border-radius: 50%; // Make it round
+    background-color: #25D366; // WhatsApp green background
+    padding: 10px; // Add some padding for size
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Add a shadow for floating effect
+    transition: transform 0.2s; // Smooth transition for hover effect
+
+    img {
+        width: 50px; // Increase size as needed
+        height: 50px; // Increase size as needed
+    }
+
+    &:hover {
+        transform: scale(1.1); // Slightly enlarge on hover
+    }
+}
+.specializationList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specializationList li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.specializationList .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.contactInfo {
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: fit-content;
+}
+
+.reachUsTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contactNumber {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contactNumber .phoneIcon {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #26b4cd;
+}
+
+.contactNumber a {
+    text-decoration: none;
+    color: #26b4cd;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contactNumber a:hover {
+    color: #26b4cd;
+}
