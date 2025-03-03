@@ -98,7 +98,7 @@ const About = () => {
                 <span className="memberImage">
                   <img src={Stuff02} alt="CEO" className="img-fluid rounded-circle" style={{ width: '150px', height: '150px' }} />
                 </span>
-                <h3 className="text-white">CEO</h3>
+                <h3 className="text-white">CEO/Founder</h3>
                 <p className="reviewDesc text-white mt-3 mt-xl-4">
                   "A creative Architectural and 3D Modeler with extensive experience in managing 3D architectural renders. Excels in team leadership, organizational skills, and adaptability, always seeking new challenges for personal and professional growth."
                 </p>
