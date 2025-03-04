@@ -7,7 +7,7 @@ const BreadCrumb = ({ page }) => {
             <div className="container d-flex justify-content-between align-items-center">
                 {page === 'about' && <h2 className="my-0 text-white text-uppercase">About us</h2>}
                 {(page === 'interior' || page === 'construction') && <h2 className="my-0 text-white text-uppercase">Our Services</h2>}
-                {(page === 'project-interior' || page === 'project-construction') && <h2 className="my-0 text-white text-uppercase">Project Gallary</h2>}
+                {(page === 'project-interior' || page === 'project-construction') && <h2 className="my-0 text-white text-uppercase">Project Gallery</h2>}
                 {page === 'contact' && <h2 className="my-0 text-white text-uppercase">Contact Us</h2>}
 
                 <ul className="my-0 d-flex align-items-center">

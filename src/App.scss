@@ -186,3 +186,87 @@
   .phone-number svg {
     color: #007bff;
   }
+
+  /* Service Section Styling */
+.serviceSection {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.serviceSection .sectionTitle h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.serviceSection .sectionContent {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Gallary Wrapper Styling */
+.gallaryWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallaryCard {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallaryCard img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallaryCard:hover img {
+    transform: scale(1.1);
+}
+
+.hoverText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallaryCard:hover .hoverText {
+    opacity: 1;
+}
+
+.cardText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.cardText .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cardText .status {
+    font-size: 14px;
+}

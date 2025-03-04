@@ -27,9 +27,8 @@ const Header = () => {
                         <NavLink to="/" className="me-3 text-uppercase nav-link">Home</NavLink>
                         <NavLink to="/about" className="me-3 text-uppercase nav-link">About Us</NavLink>
 
-                        <NavDropdown title="Our Services" id="basic-nav-dropdown" className={(data.pathname === '/interior' || data.pathname === '/construction' || data.pathname === '/project-gallary') ? 'me-3 text-uppercase activeDropdown' : 'me-3 text-uppercase'}>
-                            <NavLink to="/interior" className="me-3 text-uppercase dropdown-item">Interior</NavLink>
-                            <NavLink to="/construction" className="me-3 text-uppercase dropdown-item">Construction</NavLink>
+                        <NavDropdown title="Our Services" id="basic-nav-dropdown" className={(data.pathname === '/services') ? 'me-3 text-uppercase activeDropdown' : 'me-3 text-uppercase'}>
+                            <NavLink to="/services" className="me-3 text-uppercase dropdown-item">Services</NavLink>
                         </NavDropdown>
 
                         <NavLink to="/contact" className="me-3 text-uppercase nav-link">Contact Us</NavLink>
