@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaDraftingCompass, FaRulerCombined, FaHardHat, FaPhoneAlt } from 'react-icons/fa';
 
 // images
 import InteriorImg from '../assets/images/interior/09.jpg';
@@ -14,14 +15,44 @@ const ServiceDetailsCard = ({ type }) => {
                 </div>
 
                 <div className={`serviceDetailsCardDesc position-absolute ${type === 'interior' ? 'interiorDesc' : 'constructionDesc'}`}>
-                    <h2>{type.charAt(0).toUpperCase() + type.slice(1)}</h2>
-                    <p>
-                        {type === 'interior' 
-                            ? "Transform your spaces with our innovative interior design solutions that blend functionality with aesthetics. Our team of experienced designers work closely with you to understand your vision and create spaces that reflect your style and meet your needs. Whether you're looking to redesign a single room or undertake a complete home renovation, we ensure that every detail is meticulously crafted to perfection."
-                            : "Build your dreams with our comprehensive construction services, ensuring quality and durability at every step. From residential homes to commercial buildings, our experienced team manages all aspects of construction, including project planning, material selection, and on-site management. We prioritize safety and sustainability, using the latest techniques and technologies to deliver projects on time and within budget."}
-                    </p>
+                    <h2>{type === 'interior' ? "Awesome Architectures" : "Our Specializations"}</h2>
+
+                    {type === 'interior' ? (
+                        <p>
+                            Revolutionize your living and working spaces with cutting-edge interior designs that seamlessly blend aesthetics with functionality. Our expert designers work hand in hand with you to bring your vision to life, creating spaces that reflect your personality and meet your needs. Whether you're refreshing a single room or transforming an entire building, we ensure every element is designed with precision and creativity.
+                        </p>
+                    ) : (
+                        <div className="specializationGrid">
+                            <div className="specializationCard">
+                                <FaDraftingCompass className="specializationIcon" />
+                                <h3>Architecture</h3>
+                                <p>Innovative design solutions blending functionality and aesthetics.</p>
+                            </div>
+
+                            <div className="specializationCard">
+                                <FaRulerCombined className="specializationIcon" />
+                                <h3>Land Surveying</h3>
+                                <p>Precision mapping and measurement for construction projects.</p>
+                            </div>
+
+                            <div className="specializationCard">
+                                <FaHardHat className="specializationIcon" />
+                                <h3>Construction</h3>
+                                <p>High-quality, sustainable, and durable construction services.</p>
+                            </div>
+                        </div>
+                    )}
+
                     <div className="buttonBox">
-                        <Link to={`/${type}`} className="learnMoreBtn">Learn more</Link>
+                        {type === 'interior' ? (
+                            <div className="contactInfo">
+                                <h3 className="reachUsTitle">Reach Us</h3>
+                                <p className="contactNumber">
+                                    <FaPhoneAlt className="phoneIcon" />
+                                    <a href="tel:+250788123456">+250 788 123 456</a>
+                                </p>
+                            </div>
+                        ) : null}
                     </div>
                 </div>
             </div>

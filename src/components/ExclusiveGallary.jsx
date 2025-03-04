@@ -1,153 +1,88 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 // images
 import ExclusiveImg01 from '../assets/images/exclusive/01.jpg';
 import ExclusiveImg02 from '../assets/images/exclusive/02.jpg';
 import ExclusiveImg03 from '../assets/images/exclusive/03.jpg';
-import ExclusiveImg04 from '../assets/images/exclusive/04.jpg';
-import ExclusiveImg05 from '../assets/images/exclusive/05.jpg';
-import ExclusiveImg06 from '../assets/images/exclusive/06.jpeg';
 import ExclusiveImg07 from '../assets/images/exclusive/07.jpg';
-import ExclusiveImg08 from '../assets/images/exclusive/08.jpg';
 import ExclusiveImg09 from '../assets/images/exclusive/09.jpg';
 import ExclusiveImg10 from '../assets/images/exclusive/10.jpg';
-import ExclusiveImg11 from '../assets/images/exclusive/11.jpg';
-import ExclusiveImg12 from '../assets/images/exclusive/12.jpg';
 
 const ExclusiveGallary = () => {
-    const [activeInterior, setActiveInterior] = useState(true);
-    const [activeConstruction, setActiveConstruction] = useState(false);
-    
-    const handleInterior = () => {
-        setActiveConstruction(false);
-        setActiveInterior(true);
-    }
-
-    const handleConstruction = () => {
-        setActiveInterior(false);
-        setActiveConstruction(true);
-    }
-
     return (
         <div className="gallary container-xxl pt-4">
             <div className="sectionTitle pt-5">
-                <h1 className="text-center text-uppercase"><span>Exclusive</span> Projects</h1>
+                <h1 className="text-center text-uppercase"><span>Some of Our</span> Projects</h1>
             </div>
 
             <div className="gallaryContents">
-                <ul className="filterMenu" data-aos="fade-up" data-aos-duration="500">
-                    <li className={activeInterior ? 'activeMenu' : null} onClick={handleInterior}>Interior</li>
-                    <li className={activeConstruction ? 'activeMenu' : null} onClick={handleConstruction}>Construction</li>
-                </ul>
-
                 <div className="filterItems" data-aos="fade-up" data-aos-duration="700">
-                    <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
+                    {/* Image 1 */}
+                    <div className="card">
                         <img src={ExclusiveImg01} alt="exclusiveImg"/>
                         <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
                             <p>Interior Design</p>
-                            <p>Stauts</p>
+                            <p>Status</p>
                         </div>
-                    </Link>
+                    </div>
 
-                    <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
+                    {/* Image 2 */}
+                    <div className="card">
                         <img src={ExclusiveImg02} alt="exclusiveImg"/>
                         <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
                             <p>Interior Design</p>
-                            <p>Stauts</p>
+                            <p>Status</p>
                         </div>
-                    </Link>
+                    </div>
 
-                    <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
+                    {/* Image 3 */}
+                    <div className="card">
                         <img src={ExclusiveImg03} alt="exclusiveImg"/>
                         <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
                             <p>Interior Design</p>
-                            <p>Stauts</p>
+                            <p>Status</p>
                         </div>
-                    </Link>
+                    </div>
 
-                    <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
-                        <img src={ExclusiveImg04} alt="exclusiveImg"/>
-                        <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
-                        <div className="cardText">
-                            <p>Interior Design</p>
-                            <p>Stauts</p>
-                        </div>
-                    </Link>
-
-                    <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
-                        <img src={ExclusiveImg05} alt="exclusiveImg"/>
-                        <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
-                        <div className="cardText">
-                            <p>Interior Design</p>
-                            <p>Stauts</p>
-                        </div>
-                    </Link>
-
-                    <Link to="project-gallary" state="interior" className={`card ${activeInterior ? 'activeCard' : 'deleteCard'}`}>
-                        <img src={ExclusiveImg06} alt="exclusiveImg"/>
-                        <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
-                        <div className="cardText">
-                            <p>Interior Design</p>
-                            <p>Stauts</p>
-                        </div>
-                    </Link>
-
-                    <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
+                    {/* Image 7 */}
+                    <div className="card">
                         <img src={ExclusiveImg07} alt="exclusiveImg"/>
                         <p className="hoverText">Single family residential house</p>
                         <div className="cardText">
                             <p>Single Family House</p>
-                            <p>Stauts</p>
+                            <p>Status</p>
                         </div>
-                    </Link>
+                    </div>
 
-                    <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
-                        <img src={ExclusiveImg08} alt="exclusiveImg"/>
-                        <p className="hoverText">Single family aesthetic villa</p>
-                        <div className="cardText">
-                            <p>Family villa</p>
-                            <p>Stauts</p>
-                        </div>
-                    </Link>
-
-                    <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
+                    {/* Image 9 */}
+                    <div className="card">
                         <img src={ExclusiveImg09} alt="exclusiveImg"/>
                         <p className="hoverText">Residential villa</p>
                         <div className="cardText">
-                            <p>Residential villa</p>
-                            <p>Stauts</p>
+                            <p>Residential Villa</p>
+                            <p>Status</p>
                         </div>
-                    </Link>
+                    </div>
 
-                    <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
+                    {/* Image 10 */}
+                    <div className="card">
                         <img src={ExclusiveImg10} alt="exclusiveImg"/>
                         <p className="hoverText">Well built Aesthetic house</p>
                         <div className="cardText">
                             <p>Family House</p>
-                            <p>Stauts</p>
+                            <p>Status</p>
                         </div>
-                    </Link>
+                    </div>
+                </div>
 
-                    <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
-                        <img src={ExclusiveImg11} alt="exclusiveImg"/>
-                        <p className="hoverText">Well built Aesthetic house</p>
-                        <div className="cardText">
-                            <p>Family House</p>
-                            <p>Stauts</p>
-                        </div>
-                    </Link>
-
-                    <Link to="project-gallary" state="construction" className={`card ${activeConstruction ? 'activeCard' : 'deleteCard'}`}>
-                        <img src={ExclusiveImg12} alt="exclusiveImg"/>
-                        <p className="hoverText">Well built Aesthetic Villa</p>
-                        <div className="cardText">
-                            <p>Family Villa</p>
-                            <p>Stauts</p>
-                        </div>
+                {/* View All Projects Button */}
+                <div className="text-center mt-4 mb-5" data-aos="fade-up" data-aos-duration="600">
+                    <Link to="project-gallary" className="btn btn-primary">
+                        View All Projects
                     </Link>
                 </div>
             </div>
