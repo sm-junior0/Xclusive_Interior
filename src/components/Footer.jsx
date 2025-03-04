@@ -30,14 +30,13 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-col mb-3 mb-xl-0">
-                    <p className="my-0 fs-5 text-white title"><strong>Latest news</strong></p>
+                    <p className="my-0 fs-5 text-white title"><strong>Specialisations</strong></p>
                     <div className="mt-3 redirects">
-                        <p className="my-3"><a className="text-decoration-none" href="/">New project launch in Kigali</a></p>
-                        <p className="my-3"><a className="text-decoration-none" href="/">Sustainable building practices seminar</a></p>
-                        <p className="my-3"><a className="text-decoration-none" href="/">Innovative design awards 2023</a></p>
-                        <p className="my-3"><a className="text-decoration-none" href="/">Community development initiatives</a></p>
-                        <p className="my-3"><a className="text-decoration-none" href="/">Upcoming workshops on construction technology</a></p>
-                        <p className="my-3"><a className="text-decoration-none" href="/">Partnerships with local artisans</a></p>
+                        <p className="my-3"><a className="text-decoration-none" href="/">Architectural design and landscaping</a></p>
+                        <p className="my-3"><a className="text-decoration-none" href="/">Civil and structural engineering</a></p>
+                        <p className="my-3"><a className="text-decoration-none" href="/">Land surveying</a></p>
+                        <p className="my-3"><a className="text-decoration-none" href="/">Estate development</a></p>
+                        <p className="my-3"><a className="text-decoration-none" href="/">Interior design</a></p>
                     </div>
                 </div>
 

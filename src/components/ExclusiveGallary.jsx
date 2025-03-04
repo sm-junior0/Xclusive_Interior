@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // images
-import ExclusiveImg01 from '../assets/images/exclusive/01.jpg';
-import ExclusiveImg02 from '../assets/images/exclusive/02.jpg';
-import ExclusiveImg03 from '../assets/images/exclusive/03.jpg';
+import ExclusiveImg01 from '../assets/images/implemented/02.JPG';
+import ExclusiveImg02 from '../assets/images/implemented/03.JPG';
+import ExclusiveImg03 from '../assets/images/implemented/05.JPG';
 import ExclusiveImg07 from '../assets/images/exclusive/07.jpg';
 import ExclusiveImg09 from '../assets/images/exclusive/09.jpg';
 import ExclusiveImg10 from '../assets/images/exclusive/10.jpg';
@@ -23,8 +23,8 @@ const ExclusiveGallary = () => {
                         <img src={ExclusiveImg01} alt="exclusiveImg"/>
                         <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
-                            <p>Interior Design</p>
-                            <p>Status</p>
+                            <p>Family villa</p>
+                            
                         </div>
                     </div>
 
@@ -33,8 +33,8 @@ const ExclusiveGallary = () => {
                         <img src={ExclusiveImg02} alt="exclusiveImg"/>
                         <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
-                            <p>Interior Design</p>
-                            <p>Status</p>
+                            <p>Residential villa</p>
+                          
                         </div>
                     </div>
 
@@ -43,8 +43,8 @@ const ExclusiveGallary = () => {
                         <img src={ExclusiveImg03} alt="exclusiveImg"/>
                         <p className="hoverText">Transform your space with interior design that blends beauty and functionality.</p>
                         <div className="cardText">
-                            <p>Interior Design</p>
-                            <p>Status</p>
+                            <p>Aesthetic villa</p>
+                            
                         </div>
                     </div>
 
@@ -54,7 +54,7 @@ const ExclusiveGallary = () => {
                         <p className="hoverText">Single family residential house</p>
                         <div className="cardText">
                             <p>Single Family House</p>
-                            <p>Status</p>
+                           
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@ const ExclusiveGallary = () => {
                         <p className="hoverText">Residential villa</p>
                         <div className="cardText">
                             <p>Residential Villa</p>
-                            <p>Status</p>
+                         
                         </div>
                     </div>
 
@@ -74,7 +74,7 @@ const ExclusiveGallary = () => {
                         <p className="hoverText">Well built Aesthetic house</p>
                         <div className="cardText">
                             <p>Family House</p>
-                            <p>Status</p>
+                           
                         </div>
                     </div>
                 </div>
