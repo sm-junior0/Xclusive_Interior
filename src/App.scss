@@ -187,6 +187,68 @@
     color: #007bff;
   }
 
+  /* Responsive Adjustments */
+@media (max-width: 768px) {
+    .modal-content {
+      width: 90%; /* Full width on smaller screens */
+      padding: 15px;
+    }
+  
+    .modal-body {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .modal-image img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .modal-details h2 {
+      font-size: 20px;
+    }
+  
+    .modal-details h3 {
+      font-size: 16px;
+    }
+  
+    .modal-details p {
+      font-size: 14px;
+    }
+  
+    .phone-number {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-content {
+      width: 95%; /* Even smaller width for very small screens */
+      padding: 10px;
+    }
+  
+    .modal-image img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .modal-details h2 {
+      font-size: 18px;
+    }
+  
+    .modal-details h3 {
+      font-size: 14px;
+    }
+  
+    .modal-details p {
+      font-size: 12px;
+    }
+  
+    .phone-number {
+      font-size: 12px;
+    }
+  }
+
   /* Service Section Styling */
 .serviceSection {
     background-size: cover;
