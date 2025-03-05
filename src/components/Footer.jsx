@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="footer-col text-white mb-4 mb-xl-0">
                     <p className="my-0 fs-2 ls-2 text-uppercase logo"><strong>XQDC<span>Ltd</span></strong></p>
                     <p className="mt-3">XQDC Ltd is a dynamic design and build company in Kigali, dedicated to transforming visions into reality. We prioritize quality, sustainability, and innovative workmanship in every project.</p>
-                    <div className="mt-4 d-flex align-items-center">
+                    {/* <div className="mt-4 d-flex align-items-center">
                         <a href="/" title="facebook" className="d-flex align-items-center justify-content-center socialLink">
                             <FaFacebookF className="icon"/>
                         </a>
@@ -26,7 +26,7 @@ const Footer = () => {
                         <a href="/" title="telegram" className="d-flex align-items-center justify-content-center socialLink">
                             <FaTelegramPlane className="icon"/>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="footer-col mb-3 mb-xl-0">
@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
 
             <div className="copyright container py-4 d-flex align-items-center justify-content-center">
-                <p className="my-0 text-white">&copy; 2023 - All Rights Reserved</p>
+                <p className="my-0 text-white">&copy; {new Date().getFullYear()} - All Rights Reserved</p>
             </div>
         </footer>
     );

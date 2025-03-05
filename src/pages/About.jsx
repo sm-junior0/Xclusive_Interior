@@ -27,7 +27,7 @@ const About = () => {
       image: Stuff02,
       description:
         "A highly creative architectural and 3D modeler with extensive experience in creating and managing 3D architectural renders. Moses excels in team leadership, organizational skills, and adaptability. He is proactive, meets deadlines, and thrives in high-pressure situations. His goal is to deliver innovative designs that exceed client expectations.",
-      phone: "+250 788 123 457",
+  
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ const About = () => {
       image: Stuff07, // Add an image for Felix
       description:
         "Felix is a visionary leader with a strong background in project management and strategic planning. As the Managing Director, he oversees the company's operations, ensuring that all projects align with the organization's goals and values. His leadership fosters innovation, collaboration, and excellence across all teams.",
-      phone: "+250 788 123 462",
+    
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const About = () => {
       image: Stuff01,
       description:
         "Blaise is a passionate structural engineer with expertise in creating safe, sustainable, and innovative building solutions. He specializes in designing resilient and efficient structures, ensuring compliance with safety standards. Blaise collaborates closely with architects and contractors to deliver high-quality, cost-effective projects that stand the test of time.",
-      phone: "+250 788 123 456",
+   
     },
     {
       id: 4,
@@ -54,7 +54,7 @@ const About = () => {
       image: Stuff04,
       description:
         "Regis is a skilled civil engineer with expertise in construction technology, CAD design, and technical works such as electricity and plumbing. He is known for his hard work, dedication, and ability to multitask effectively. Regis is also passionate about community service and choir singing.",
-      phone: "+250 788 123 459",
+ 
     },
     {
       id: 5,
@@ -63,7 +63,7 @@ const About = () => {
       image: Stuff05,
       description:
         "JMV is a civil engineer specializing in CAD design and building services, including Mechanical (HVAC), Electrical, and Plumbing (MEP) systems. He is well-versed in construction technology and has received specialized training from Nziza Training Academy. JMV is also an avid soccer player.",
-      phone: "+250 788 123 460",
+  
     },
     {
       id: 6,
@@ -72,7 +72,7 @@ const About = () => {
       image: Stuff06,
       description:
         "Jean is a highly skilled survey engineer with expertise in land surveying, geomatics, and geospatial data analysis. He has led surveying operations for major projects, including the Inzovu Mall Construction Project. Jean is proficient in using advanced tools like LiDAR, total stations, and drones for precise data collection.",
-      phone: "+250 788 123 461",
+
     },
     {
       id: 7,
@@ -81,7 +81,7 @@ const About = () => {
       image: Stuff03,
       description:
         "Theodore is a certified civil engineer with extensive experience in quantity surveying. He specializes in cost estimation, project budgeting, and resource management. His dedication to delivering high-quality results makes him a valuable asset to any project.",
-      phone: "+250 788 123 458",
+  
     },
   ];
 
@@ -119,7 +119,6 @@ const About = () => {
               environmental sustainability, and innovative workmanship
               throughout every stage of the construction process.
             </p>
-            <button>Read More</button>
           </div>
         </div>
 
@@ -141,7 +140,6 @@ const About = () => {
               Our dedicated team is committed to delivering excellence in every
               project, whether residential, commercial, or industrial.
             </p>
-            <button>Read More</button>
           </div>
 
           <div className="aboutImage position-relative w-100 w-lg-50 ms-lg-2 ms-xl-4">
@@ -202,9 +200,6 @@ const About = () => {
                 <h2>{selectedMember.name}</h2>
                 <h3>{selectedMember.title}</h3>
                 <p>{selectedMember.description}</p>
-                <p className="phone-number">
-                  <FaPhone /> {selectedMember.phone}
-                </p>
               </div>
             </div>
           </div>

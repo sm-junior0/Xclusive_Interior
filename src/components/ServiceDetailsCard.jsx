@@ -24,19 +24,16 @@ const ServiceDetailsCard = ({ type }) => {
                     ) : (
                         <div className="specializationGrid">
                             <div className="specializationCard">
-                                <FaDraftingCompass className="specializationIcon" />
                                 <h3>Architecture</h3>
                                 <p>Innovative design solutions blending functionality and aesthetics.</p>
                             </div>
 
                             <div className="specializationCard">
-                                <FaRulerCombined className="specializationIcon" />
                                 <h3>Land Surveying</h3>
                                 <p>Precision mapping and measurement for construction projects.</p>
                             </div>
 
                             <div className="specializationCard">
-                                <FaHardHat className="specializationIcon" />
                                 <h3>Construction</h3>
                                 <p>High-quality, sustainable, and durable construction services.</p>
                             </div>
@@ -49,7 +46,7 @@ const ServiceDetailsCard = ({ type }) => {
                                 <h3 className="reachUsTitle">Reach Us</h3>
                                 <p className="contactNumber">
                                     <FaPhoneAlt className="phoneIcon" />
-                                    <a href="tel:+250788123456">+250 788 123 456</a>
+                                    <a href="tel:+250781005276">+250 781 005 276</a>
                                 </p>
                             </div>
                         ) : null}
