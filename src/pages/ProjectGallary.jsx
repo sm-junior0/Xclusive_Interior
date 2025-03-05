@@ -36,8 +36,8 @@ import ConstructionImg11 from '../assets/images/construction/11.jpg';
 import ConstructionImg12 from '../assets/images/construction/12.jpg';
 
 // videos
-import Video1 from '../assets/videos/video1.mp4'; // Add your video file
-import Video2 from '../assets/videos/video2.mp4'; // Add your video file
+import Video1 from '../assets/videos/video1.mp4'; 
+import Video2 from '../assets/videos/video2.mp4'; 
 
 const ProjectGallary = () => {
     const [slideIndex, setSlideIndex] = useState(1);

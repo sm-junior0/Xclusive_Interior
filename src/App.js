@@ -27,7 +27,7 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/services' element={<Services/>}/>
-        <Route path='/project-gallery' element={<ProjectGallary/>}/>
+        <Route path='/project-gallary' element={<ProjectGallary/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
       <a href="https://wa.me/250781005276" className="whatsapp-float" target="_blank" rel="noopener noreferrer">

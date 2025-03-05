@@ -91,7 +91,7 @@ const Services = () => {
                     <h1 className="text-center text-uppercase">Ongoing <span>Projects</span></h1>
                 </div>
                 <div className="gallaryWrapper mt-4">
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={OngoingImg01} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Single family house</p>
@@ -102,7 +102,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={OngoingImg02} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Large Building</p>
@@ -113,7 +113,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={OngoingImg03} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Residential house</p>
@@ -125,7 +125,7 @@ const Services = () => {
                     </Link>
 
                     
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={OngoingImg04} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Family building</p>
@@ -137,7 +137,7 @@ const Services = () => {
                     </Link>
 
                     
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={OngoingImg05} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Large house</p>
@@ -149,7 +149,7 @@ const Services = () => {
                     </Link>
 
                     
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={OngoingImg06} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Residential villa</p>
@@ -168,7 +168,7 @@ const Services = () => {
                     <h1 className="text-center text-uppercase">Some <span>Implemented Projects</span></h1>
                 </div>
                 <div className="gallaryWrapper mt-4">
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={ImplementedImg01} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Villa</p>
@@ -179,7 +179,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={ImplementedImg02} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Aesthetic villa</p>
@@ -190,7 +190,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={ImplementedImg03} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>House</p>
@@ -201,7 +201,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={ImplementedImg04} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Villa</p>
@@ -212,7 +212,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={ImplementedImg05} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Residential villa</p>
@@ -223,7 +223,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="construction" className="gallaryCard">
+                    <Link to="/project-gallary" state="construction" className="gallaryCard">
                         <img src={ImplementedImg06} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Residential villa</p>
@@ -242,7 +242,7 @@ const Services = () => {
                     <h1 className="text-center text-uppercase">Our <span>Designs</span></h1>
                 </div>
                 <div className="gallaryWrapper mt-4">
-                    <Link to="/project-gallery" state="interior" className="gallaryCard">
+                    <Link to="/project-gallary" state="interior" className="gallaryCard">
                         <img src={DesignImg01} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Twin houses</p>
@@ -253,7 +253,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="interior" className="gallaryCard">
+                    <Link to="/project-gallary" state="interior" className="gallaryCard">
                         <img src={DesignImg02} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>luxurious home</p>
@@ -264,7 +264,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="interior" className="gallaryCard">
+                    <Link to="/project-gallary" state="interior" className="gallaryCard">
                         <img src={DesignImg03} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Single family home</p>
@@ -275,7 +275,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="interior" className="gallaryCard">
+                    <Link to="/project-gallary" state="interior" className="gallaryCard">
                         <img src={DesignImg04} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>modern apartment</p>
@@ -286,7 +286,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="interior" className="gallaryCard">
+                    <Link to="/project-gallary" state="interior" className="gallaryCard">
                         <img src={DesignImg05} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Modern single family house</p>
@@ -297,7 +297,7 @@ const Services = () => {
                         </div>
                     </Link>
 
-                    <Link to="/project-gallery" state="interior" className="gallaryCard">
+                    <Link to="/project-gallary" state="interior" className="gallaryCard">
                         <img src={DesignImg06} alt="exclusiveImg" />
                         <div className="hoverText">
                             <p>Full aeration bar resto</p>

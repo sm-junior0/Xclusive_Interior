@@ -81,7 +81,7 @@ const ExclusiveGallary = () => {
 
                 {/* View All Projects Button */}
                 <div className="text-center mt-4 mb-5" data-aos="fade-up" data-aos-duration="600">
-                    <Link to="project-gallery" className="btn btn-primary">
+                    <Link to="/services" className="btn btn-primary">
                         View All Projects
                     </Link>
                 </div>
