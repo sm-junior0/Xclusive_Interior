@@ -53,12 +53,16 @@ const Contact = () => {
 
                             <div className="contactMail">
                                 <h3><IoMdMail/><strong>Mail:</strong></h3>
-                                <p>info@xqdc.com</p>
+                                <p>
+                                    <a href="mailto:info@xqdc.com" className="text-decoration-none text-dark">info@xqdc.com</a>
+                                </p>
                             </div>
 
                             <div className="contactPhone">
                                 <h3><FaPhone/><strong>Phone:</strong></h3>
-                                <p>+250 781 005 276</p>
+                                <p>
+                                    <a href="tel:+250781005276" className="text-decoration-none text-dark">+250 781 005 276</a>
+                                </p>
                             </div>
                         </div>
                     </div>
