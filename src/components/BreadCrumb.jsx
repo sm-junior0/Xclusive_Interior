@@ -28,13 +28,13 @@ const BreadCrumb = ({ page }) => {
                     {page === 'project-interior' && (
                         <>
                             <li><Link to="/interior" className="link">Our Services <span>/</span></Link></li>
-                            <li aria-current="page"><Link to="/project-gallary" className="link active">Gallery</Link></li>
+                            <li aria-current="page"><Link to="/project-gallery" className="link active">Gallery</Link></li>
                         </>
                     )}
                     {page === 'project-construction' && (
                         <>
                             <li><Link to="/construction" className="link">Our Services <span>/</span></Link></li>
-                            <li aria-current="page"><Link to="/project-gallary" className="link active">Gallary</Link></li>
+                            <li aria-current="page"><Link to="/project-gallery" className="link active">Gallary</Link></li>
                         </>
                     )}
                     {page === 'contact' && <li aria-current="page"><Link to="/contact" className="link active">Contact</Link></li>}
