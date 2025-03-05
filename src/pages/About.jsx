@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import AppLayout from "../layouts/AppLayout";
 import BreadCrumb from "../components/BreadCrumb";
 
-// icons
-import { FaPhone } from "react-icons/fa";
 
 // images
 import AboutImage01 from "../assets/images/exclusive/03.jpg";
