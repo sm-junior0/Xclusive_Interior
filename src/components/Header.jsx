@@ -35,7 +35,9 @@ const Header = () => {
                     </Nav>
                 </Navbar.Collapse>
 
-                <Link to="/" className="text-decoration-none text-uppercase text-primary quoteBtn">Get a quote</Link>
+                <a href="tel:+250781005276" className="text-decoration-none text-uppercase text-primary quoteBtn">
+                  <i className="bi bi-telephone me-2"></i>+250 781 005 276
+                </a>
             </Container>
         </Navbar>
     );
