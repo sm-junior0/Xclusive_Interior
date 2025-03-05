@@ -130,9 +130,25 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
     color: #333;
+  }
+
+  @media (max-width: 768px) {
+    .close-modal {
+        font-size: 40px; // Even larger font for smaller screens
+        top: 5px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .close-modal {
+        font-size: 45px; // Maximum size for very small screens
+        top: 3px;
+        right: 3px;
+    }
   }
   
   /* Modal Body */
@@ -248,7 +264,6 @@
       font-size: 12px;
     }
   }
-
   /* Service Section Styling */
 .serviceSection {
     background-size: cover;
@@ -356,4 +371,89 @@
     max-width: 100%;
     max-height: 80vh;
     border-radius: 10px;
+}
+
+/* Gallery Sections Responsiveness */
+.gallaryWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 15px;
+  justify-content: center;
+}
+
+.gallaryCard {
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.gallaryCard img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Card Text Styling */
+.cardText {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.cardText .title {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* Hover Text */
+.hoverText {
+  font-size: 1.2rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .gallaryCard {
+    flex: 1 1 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallaryCard {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .gallaryCard img {
+    height: 250px;
+  }
+
+  .cardText .title {
+    font-size: 1rem;
+  }
+
+  .hoverText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallaryCard img {
+    height: 200px;
+  }
+
+  .cardText {
+    padding: 10px;
+  }
+
+  .sectionTitle h1 {
+    font-size: 1.8rem;
+  }
 }
