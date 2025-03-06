@@ -24,26 +24,23 @@ const About = () => {
       title: "CEO/Founder",
       image: Stuff02,
       description:
-        "A highly creative architectural and 3D modeler with extensive experience in creating and managing 3D architectural renders. Moses excels in team leadership, organizational skills, and adaptability. He is proactive, meets deadlines, and thrives in high-pressure situations. His goal is to deliver innovative designs that exceed client expectations.",
-  
+        "Moses is Highly multitasking creative architectural and 3D modeler with extensive experience in the creation and management of 3D architectural renders. Able to work as part of a team under his leadership with very good organizational skills, proactive attitude and ability to adapt quickly to changing environments. He's always looking for a new challenge where his skills can be used effectively; one which will make best use of existing skills while enabling further personal and professional development. An enthusiastic and flexible person who is able to meet deadlines, good communication and very advising to the client and handle high pressure situations.",
     },
     {
       id: 2,
       name: "Uwimanimpaye Felix",
       title: "Managing Director (MD)",
-      image: Stuff07, // Add an image for Felix
+      image: Stuff07,
       description:
         "Felix is a visionary leader with a strong background in project management and strategic planning. As the Managing Director, he oversees the company's operations, ensuring that all projects align with the organization's goals and values. His leadership fosters innovation, collaboration, and excellence across all teams.",
-    
     },
     {
       id: 3,
       name: "Abikunda Blaise",
       title: "Structural Engineer",
       image: Stuff01,
-      description:
-        "Blaise is a passionate structural engineer with expertise in creating safe, sustainable, and innovative building solutions. He specializes in designing resilient and efficient structures, ensuring compliance with safety standards. Blaise collaborates closely with architects and contractors to deliver high-quality, cost-effective projects that stand the test of time.",
-   
+      description: 
+        "Blaise is a structural engineer with a degree. He is passionate about creating safe, sustainable, and innovative solutions for a wide range of building and infrastructure projects. Moreover, he specializes in designing structures that are both resilient and efficient, ensuring they meet the highest standards of safety and performance. He works closely with architects, contractors, and clients to transform concepts into tangible, functional structures that stand the test of time. He's dedicated to ensuring every project is executed with precision, focusing on durability and cost-effectiveness while maintaining the highest quality standards. Core Competencies:\n• Structural Analysis & Design\n• Building Code Compliance\n• Seismic & Wind Load Analysis\n• Sustainable & Green Building Practices\n• Problem Solving & Innovation in Design\n• Collaboration & Team Coordination.\nHis goal is to contribute to projects that enhance the built environment and support the needs of the community."
     },
     {
       id: 4,
@@ -51,8 +48,7 @@ const About = () => {
       title: "Civil Engineer",
       image: Stuff04,
       description:
-        "Regis is a skilled civil engineer with expertise in construction technology, CAD design, and technical works such as electricity and plumbing. He is known for his hard work, dedication, and ability to multitask effectively. Regis is also passionate about community service and choir singing.",
- 
+        "Regis is a Civil Engineer with A0 degree in civil engineering from INES Ruhengeri multitasking as a CAD Technician and designer. He is good in both construction technology and technical works such as electricity & plumbing. He is a hard worker and associates with praying and choir singing.",
     },
     {
       id: 5,
@@ -60,17 +56,15 @@ const About = () => {
       title: "Architect",
       image: Stuff05,
       description:
-        "JMV is a civil engineer specializing in CAD design and building services, including Mechanical (HVAC), Electrical, and Plumbing (MEP) systems. He is well-versed in construction technology and has received specialized training from Nziza Training Academy. JMV is also an avid soccer player.",
-  
+        "JMV is a Civil Engineer with a degree, working as CAD Technician and designer. He is well informed in construction technology and building services designs such as Mechanical (HVAC), Electricity & Plumbing (MEP) with specialization gained from Nziza training Academy. He is a hard worker and associates it with soccer playing.",
     },
     {
       id: 6,
-      name: "RUKUNDO Jean d’amour",
+      name: "RUKUNDO Jean d'amour",
       title: "Survey Engineer",
       image: Stuff06,
       description:
-        "Jean is a highly skilled survey engineer with expertise in land surveying, geomatics, and geospatial data analysis. He has led surveying operations for major projects, including the Inzovu Mall Construction Project. Jean is proficient in using advanced tools like LiDAR, total stations, and drones for precise data collection.",
-
+        "Rukundo Jean Damour is a highly skilled professional with a Bachelor's Degree in Surveying and Geomatics Engineering. He has extensive expertise in land surveying, geomatics, building surveying, topographic surveying, physical planning, and geospatial data analysis. His technical proficiency includes the application of Geographic Information Systems (GIS), remote sensing technologies, and global positioning systems (GPS) for climate and environmental monitoring and spatial data management. As one of the big achievements, Rukundo led the surveying operations for the Inzovu Mall Construction Project, a mega building project in Kigali, Rwanda, where he oversees control surveying, boundary delineation, site layout, and construction staking. His ability to integrate advanced surveying tools such as LiDAR, total stations, and drones ensures precise and efficient data collection, essential for large-scale infrastructure development. Known for his technical acumen and leadership, Rukundo is a key asset in managing complex surveying tasks with high accuracy and reliability. His passion for advancing the surveying profession and commitment to high standards of quality and accuracy made him a valuable asset to any project at our organization.",
     },
     {
       id: 7,
@@ -78,8 +72,7 @@ const About = () => {
       title: "Quantity Surveyor",
       image: Stuff03,
       description:
-        "Theodore is a certified civil engineer with extensive experience in quantity surveying. He specializes in cost estimation, project budgeting, and resource management. His dedication to delivering high-quality results makes him a valuable asset to any project.",
-  
+        "Theodore is a certified civil engineer with 4 years of experience as clerk of work in the building construction industry. Thereafter, he has been dedicated to specializing in quantity surveying, where he gained valuable expertise in cost estimation, project budgeting, and resource management. His experience and passion for both civil engineering and quantity surveying drive him to deliver high-quality results and contribute effectively to any project.",
     },
   ];
 
