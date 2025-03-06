@@ -281,7 +281,7 @@ const Services = () => {
                             <p>modern apartment</p>
                         </div>
                         <div className="cardText">
-                            <p className="title">modern apartment</p>
+                            <p className="title">modern apartment</p>  
                             
                         </div>
                     </Link>

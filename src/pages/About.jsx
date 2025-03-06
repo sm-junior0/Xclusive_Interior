@@ -108,14 +108,10 @@ const About = () => {
             <h3>Welcome to XQDC Ltd!</h3>
             <h1>Your Design and Build Partner</h1>
             <p>
-              XQDC Ltd is a dynamic and innovative design and build company
-              based in Kigali, specializing in transforming visions into reality
-              with comprehensive solutions in the construction industry.
+            XQDC Ltd is a dynamic and innovative design and build company that offers comprehensive solutions for the construction industry. Our company was founded with the desire of transforming visions into reality by providing end-to-end services that include high quality designs, environmental sustainability, high innovative workmanship during construction, and the supply of high-quality materials. Whether it's residential, commercial, or industrial projects.
             </p>
             <p>
-              We pride ourselves on delivering high-quality designs,
-              environmental sustainability, and innovative workmanship
-              throughout every stage of the construction process.
+            XQDC Ltd is dedicated to delivering excellence for both designs and through every stage of the construction process.
             </p>
           </div>
         </div>
