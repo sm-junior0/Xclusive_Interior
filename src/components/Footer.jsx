@@ -46,7 +46,7 @@ const Footer = () => {
                     <div className="address">
                         <p className="d-flex align-items-center"><strong>Phone: </strong><span>+250 781 005 276</span></p>
                         <p className="d-flex align-items-center"><strong>Email: </strong><span>info@xqdc.com</span></p>
-                        <p className="d-flex align-items-center"><strong>Web: </strong><a href="/" className="text-decoration-none text-white">www.xqdc.com</a></p>
+                        <p className="d-flex align-items-center"><strong>Web: </strong><a href="xclusiveqd.com" className="text-decoration-none text-white">xclusiveqd.com</a></p>
                     </div>
                 </div>
             </div>
