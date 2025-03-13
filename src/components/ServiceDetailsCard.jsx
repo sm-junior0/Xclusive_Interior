@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaDraftingCompass, FaRulerCombined, FaHardHat, FaPhoneAlt } from 'react-icons/fa';
+import {  FaPhoneAlt } from 'react-icons/fa';
 
 // images
 import InteriorImg from '../assets/images/interior/09.jpg';
