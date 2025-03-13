@@ -15,7 +15,7 @@ const Topbar = () => {
                     </div>
                     <div className="ms-0 ms-sm-3 d-flex align-items-center">
                         <IoMdMail className="fs-5"/>
-                        <p className="my-0 ms-2" style={{fontSize: '1.1rem'}}>info@xqdc.com</p>
+                        <p className="my-0 ms-2" style={{fontSize: '1.1rem'}}>Info@xclusiveqd.com </p>
                     </div>
                 </div>
                 <div className="ms-0 ms-sm-3 d-flex align-items-center">

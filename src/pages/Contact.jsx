@@ -54,7 +54,7 @@ const Contact = () => {
                             <div className="contactMail">
                                 <h3><IoMdMail/><strong>Mail:</strong></h3>
                                 <p>
-                                    <a href="mailto:info@xqdc.com" className="text-decoration-none text-dark">info@xqdc.com</a>
+                                    <a href="mailto:Info@xclusiveqd.com " className="text-decoration-none text-dark">Info@xclusiveqd.com </a>
                                 </p>
                             </div>
 

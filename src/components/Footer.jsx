@@ -45,8 +45,8 @@ const Footer = () => {
                     <p className="mt-3">Kigali, Rwanda</p>
                     <div className="address">
                         <p className="d-flex align-items-center"><strong>Phone: </strong><span>+250 781 005 276</span></p>
-                        <p className="d-flex align-items-center"><strong>Email: </strong><span>info@xqdc.com</span></p>
-                        <p className="d-flex align-items-center"><strong>Web: </strong><a href="xclusiveqd.com" className="text-decoration-none text-white">xclusiveqd.com</a></p>
+                        <p className="d-flex align-items-center"><strong>Email: </strong><a href="mailto:info@xclusiveqd.com" className="text-decoration-none text-white">info@xclusiveqd.com</a></p>
+                        <p className="d-flex align-items-center"><strong>Web: </strong><a href="https://xclusiveqd.com" className="text-decoration-none text-white">xclusiveqd.com</a></p>
                     </div>
                 </div>
             </div>
